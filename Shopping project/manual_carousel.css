@@ -1,0 +1,48 @@
+//manual carousel
+var images=new Array();
+
+images[0]="i1.jpg";
+images[1]="i2.jpg";
+images[2]="i3.jpg";
+images[3]="i4.jpg";
+images[4]="i5.jpg";
+images[5]="i6.jpg";
+images[6]="i7.jpg";
+var x=0;
+function leftchange()
+{
+	if(x==0)
+	{
+		x=6;
+		document.getElementById('i2').src=images[(x+1)%7];
+		document.getElementById('i3').src=images[(x+2)%7];
+		document.getElementById('i4').src=images[(x+3)%7];
+	}
+	else
+	{
+		x-=1;
+		document.getElementById('i2').src=images[(x+1)%6];
+		document.getElementById('i3').src=images[(x+2)%6];
+		document.getElementById('i4').src=images[(x+3)%6];
+	}
+		document.getElementById('i1').src=images[x];
+}
+
+function rightchange()
+{
+	if(x==6)
+	{
+		x=0;
+		document.getElementById('i2').src=images[(x+1)];
+		document.getElementById('i3').src=images[(x+2)];
+		document.getElementById('i4').src=images[(x+3)];
+	}
+	else
+	{
+		x+=1;
+		document.getElementById('i2').src=images[(x+1)%7];
+		document.getElementById('i3').src=images[(x+2)%7];
+		document.getElementById('i4').src=images[(x+3)%7];
+	}
+		document.getElementById('i1').src=images[x];
+}

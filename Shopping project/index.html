@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://fonts/googleapis.com/css?family=Open+Sans:400,600,700,800,300">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="8/js-image-slider.css">
+	<link rel="stylesheet" type="text/css" href="8/tooltip.css">
+	</head>
+
+<body style="background-color:white;">
+<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="https://use.fontawesome.com/2f80cf90ad.js"></script>
+<script src="index.js"/></script>
+<script src="manual_carousel.js"></script>
+<script src="8/js-image-slider.js"/></script>
+<script src="8/tooltip.js"/></script>
+
+<div class="nav-header" style="background-color:#d9d9d9;height:80px;margin-top:0px;width: 100%;">
+<ul style="list-style:none;">
+	<li class="nav-header-li">
+		<a href="index.html">
+			<img src="logo.png" style="width:150px;height:45px;">
+		</a>
+	</li>
+	<li class="nav-header-li">
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+		<a href="#">
+			<input type="button" class="nav-btn" id="nav-btn" value="Home">
+		</a>
+	</li>
+	
+	<li class="nav-header-li">
+		<a href="#">
+			<input type="button" class="nav-btn" id="nav-btn" value="Collections">
+		</a>
+				<div class="collection">
+					<ul>
+						<li class="menu-main-1">
+							<ul class="menu-hidden" style="padding:0px;font-family:Comic Sans MS;">
+								<li class="menu-main" style="background-color:#f2f2f2;color:black;"><h4>ELECTRONICS</h4>
+								<ul class="menu-sub">
+									<li>Televisions</li>
+									<li>Washing Machines</li>
+									<li>AC</li>
+									<li>Refrigerators</li>
+								</ul>
+								</li>
+								<li class="menu-main" style="background-color:#ffffff;color:black;"><h4>APPLIANCES</h4>
+								<ul class="menu-sub">
+									<li>Gas Stoves</li>
+									<li>Purifier</li>
+									<li>Smart Locks</li>
+									<li>Tools</li>
+								</ul>
+								</li>
+								<li class="menu-main" style="background-color:#f2f2f2;color:black;"><h4>CLOTHING</h4>
+								<ul class="menu-sub">
+									<li>Ethnic Wear</li>
+									<li>Sports Wear</li>
+									<li>Winter Wear</li>
+									<li>Western Wear</li>
+								</ul>
+								</li>
+								<li class="menu-main" style="background-color:#ffffff;color:black;"><h4>FURNITURE</h4>
+								<ul class="menu-sub">
+									<li>Wardrobe</li>
+									<li>Sofa</li>
+									<li>Bed</li>
+									<li>Wall Shelves</li>
+								</ul>
+								</li>
+								<li class="menu-main" style="background-color:#f2f2f2;color:black;margin-right:0px;"><h4>BOOKS</h4>
+								<ul class="menu-sub">
+									<li>Entrance Exams</li>
+									<li>Novels</li>
+									<li>Fiction</li>
+									<li>Academic</li>
+								</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+	</li>
+	
+	<li class="nav-header-li">
+		<a href="#">
+			<input type="button" class="nav-btn" id="nav-btn" value="Locations" >
+		</a>
+	</li>
+	<li class="nav-header-li">
+		<a href="#">
+			<input type="button" class="nav-btn" id="nav-btn" value="About" >
+		</a>
+	</li>
+		<li class="nav-header-li">
+		<a href="contact.html" target="_blank">
+			<input type="button" class="nav-btn" id="nav-btn" value="Contact" >
+		</a>
+	</li>
+	<li class="nav-header-li">
+		<a href="login.html" target="_blank">
+			<input type="button" id="login" value="Login">
+		</a>
+	</li>
+	<li class="nav-header-li">
+		<a href="signup.html" target="_blank">
+			<input type="button" id="signup" value="Sign Up" >
+		</a>
+	</li>
+	<li class="nav-header-li">
+		<a href="#">
+				<img src="cart.png" class="toggle_menu" id="cart-image"/>	
+		</a>
+	</li>
+</ul>
+</div>
+
+
+<hr style="margin-top:-30.5px;">
+
+
+<div style="margin-top:-19px;">
+	<img id="carousel" src="images/carousel/i1.png" height="250px" width="100%">
+</div>
+<br><br><br>
+
+<div class="manual-carousel" style="width:1200px;">
+	<table>
+	<tr>
+	<td><div style="background-color:white;height:160px;width:160px;font-family:Comic Sans MS;text-align:center;font-size:30px;margin-left:0px;">Latest Collection<input type="button" value="View all" id="viewall-c1" style="height:50px;width:120px;margin-left:-10px;"/><br><img src="timer.png" height="30px" width="30px"/><div id="demo" style="font-size:20px;"></div></div></td>
+	<td id="left_arrow"><img src="left_arrow.png" height="25px" width="25px" onclick="leftchangejeans();" style="margin-left:30px;"></td>
+	<td id="t1"><img id="i1" src="images/jeans/i1.jpg" height="200px" width="250px"> <h5>Pepe Jeans</h5>&nbsp&nbsp&nbsp&nbsp&nbsp </td>
+	<td id="t2"><img id="i2" src="images/jeans/i2.jpg" height="200px" width="250px"> &nbsp&nbsp&nbsp&nbsp&nbsp </td>
+	<td id="t3"><img id="i3" src="images/jeans/i3.jpg" height="200px" width="250px"> &nbsp&nbsp&nbsp&nbsp&nbsp </td>
+	<td id="t4"><img id="i4" src="images/jeans/i4.jpg" height="200px" width="250px"></td>
+	<td id="right_arrow"><img src="rightarrow.png" height="25px" width="25px" onclick="rightchangejeans();" style="margin-left:20px;"></td>
+	</tr>
+	
+	</table>
+</div>
+<br><br><br><hr><br><br>
+<div class="manual-carousel" style="width:1200px;">
+	<table>
+	<tr>
+	<td><div style="background-color:white;height:160px;width:160px;font-family:Comic Sans MS;text-align:center;font-size:30px;margin-left:0px;">Latest Collection<input type="button" value="View all" id="viewall-c1" style="height:50px;width:120px;margin-left:-10px;"/></div></td>
+	<td id="left_arrow"><img src="left_arrow.png" height="25px" width="25px" onclick="leftchangetv();" style="margin-left:30px;"></td>
+	<td id="t1"><img id="ti1" src="images/tv/i1.jpeg" height="160px" width="250px"><h5>Sony TV</h5> &nbsp&nbsp&nbsp&nbsp&nbsp </td>
+	<td id="t2"><img id="ti2" src="images/tv/i2.jpeg" height="160px" width="250px"> <h5>Sony TV</h5>&nbsp&nbsp&nbsp&nbsp&nbsp </td>
+	<td id="t3"><img id="ti3" src="images/tv/i3.jpeg" height="160px" width="250px"> <h5>Sony TV</h5>&nbsp&nbsp&nbsp&nbsp&nbsp </td>
+	<td id="t4"><img id="ti4" src="images/tv/i4.jpeg" height="160px" width="250px"><h5>Sony TV</h5></td>
+	<td id="right_arrow"><img src="rightarrow.png" height="25px" width="25px" onclick="rightchangetv();" style="margin-left:20px;"></td>
+	</tr>
+	
+	</table>
+</div>
+<br><br><br><hr><br><br>
+<div class="manual-carousel" style="width:1200px;">
+	<table>
+	<tr>
+	<td><div style="background-color:white;height:160px;width:160px;font-family:Comic Sans MS;text-align:center;font-size:30px;margin-left:0px;">Latest Collection<input type="button" value="View all" id="viewall-c1" style="height:50px;width:120px;margin-left:-10px;"/></div></td>
+	<td id="left_arrow"><img src="left_arrow.png" height="25px" width="25px" onclick="leftchangelaptops();" style="margin-left:30px;"></td>
+	<td id="t1"><img id="li1" src="images/laptops/i1.jpeg" height="160px" width="250px"> &nbsp&nbsp&nbsp&nbsp&nbsp </td>
+	<td id="t1"><img id="li2" src="images/laptops/i2.jpeg" height="160px" width="250px"> &nbsp&nbsp&nbsp&nbsp&nbsp </td>
+	<td id="t1"><img id="li3" src="images/laptops/i3.jpeg" height="160px" width="250px"> &nbsp&nbsp&nbsp&nbsp&nbsp </td>
+	<td id="t1"><img id="li4" src="images/laptops/i4.jpeg" height="160px" width="250px"></td>
+	<td id="right_arrow"><img src="rightarrow.png" height="25px" width="25px" onclick="rightchangelaptops();" style="margin-left:20px;"></td>
+	</tr>
+	
+	</table>
+</div>
+<br><br><br><hr><br><br>
+<div class="manual-carousel" style="width:1200px;">
+	<table>
+	<tr>
+	<td><div style="background-color:white;height:160px;width:160px;font-family:Comic Sans MS;text-align:center;font-size:30px;margin-left:0px;">Latest Collection<input type="button" value="View all" id="viewall-c1" style="height:50px;width:120px;margin-left:-10px;"/></div></td>
+	<td id="left_arrow"><img src="left_arrow.png" height="25px" width="25px" onclick="leftchangefurni();" style="margin-left:30px;"></td>
+	<td id="t1"><img id="fi1" src="images/furnitures/i1.jpeg" height="200px" width="200px"> &nbsp&nbsp&nbsp&nbsp&nbsp </td>
+	<td id="t2"><img id="fi2" src="images/furnitures/i2.jpeg" height="200px" width="200px"> &nbsp&nbsp&nbsp&nbsp&nbsp </td>
+	<td id="t3"><img id="fi3" src="images/furnitures/i3.jpg" height="200px" width="200px"> &nbsp&nbsp&nbsp&nbsp&nbsp </td>
+	<td id="t4"><img id="fi4" src="images/furnitures/i4.jpeg" height="200px" width="200px"></td>
+	<td id="t5"><img id="fi5" src="images/furnitures/i5.jpg" height="200px" width="200px"></td>
+	<td id="right_arrow"><img src="rightarrow.png" height="25px" width="25px" onclick="rightchangefurni();" style="margin-left:20px;"></td>
+	</tr>
+	
+	</table>
+</div>
+<br><br><br><hr><br><br>
+<div class="manual-carousel" style="width:1200px;">
+	<table>
+	<tr>
+	<td><div style="background-color:white;height:160px;width:160px;font-family:Comic Sans MS;text-align:center;font-size:30px;margin-left:0px;">Latest Collection<input type="button" value="View all" id="viewall-c1" style="height:50px;width:120px;margin-left:-10px;"/></div></td>
+	<td id="left_arrow"><img src="left_arrow.png" height="25px" width="25px" onclick="leftchangemobiles();" style="margin-left:30px;"></td>
+	<td id="mob-t1"><img id="mi1" src="images/mobiles/i1.jpeg" height="200px" width="110px"> &nbsp&nbsp&nbsp&nbsp&nbsp </td>
+	<td id="mob-t2"><img id="mi2" src="images/mobiles/i2.jpeg" height="200px" width="110px"> &nbsp&nbsp&nbsp&nbsp&nbsp </td>
+	<td id="mob-t3"><img id="mi3" src="images/mobiles/i3.jpeg" height="200px" width="110px"> &nbsp&nbsp&nbsp&nbsp&nbsp </td>
+	<td id="mob-t4"><img id="mi4" src="images/mobiles/i4.jpeg" height="200px" width="110px"></td>
+	<td id="mob-t5"><img id="mi5" src="images/mobiles/i5.jpeg" height="200px" width="110px"></td>
+	<td id="mob-t6"><img id="mi6" src="images/mobiles/i6.jpeg" height="200px" width="110px"></td>
+	<td id="right_arrow"><img src="rightarrow.png" height="25px" width="25px" onclick="rightchangemobiles();" style="margin-left:20px;"></td>
+	</tr>
+	
+	</table>
+</div>
+<br><br><br><hr><br><br>
+<div class="manual-carousel" style="width:1200px;">
+	<table>
+	<tr>
+	<td><div style="background-color:white;height:160px;width:160px;font-family:Comic Sans MS;text-align:center;font-size:30px;margin-left:0px;">Latest Collection<input type="button" value="View all" id="viewall-c1" style="height:50px;width:120px;margin-left:-10px;"/></div></td>
+	<td id="left_arrow"><img src="left_arrow.png" height="25px" width="25px" onclick="leftchangecamera();" style="margin-left:30px;"></td>
+	<td id="t1"><img id="ci1" src="images/camera/i1.jpeg" height="160px" width="250px"> &nbsp&nbsp&nbsp&nbsp&nbsp </td>
+	<td id="t2"><img id="ci2" src="images/camera/i2.jpeg" height="160px" width="250px"> &nbsp&nbsp&nbsp&nbsp&nbsp </td>
+	<td id="t3"><img id="ci3" src="images/camera/i3.jpeg" height="160px" width="250px"> &nbsp&nbsp&nbsp&nbsp&nbsp </td>
+	<td id="t4"><img id="ci4" src="images/camera/i4.jpeg" height="160px" width="250px"></td>
+	<td id="right_arrow"><img src="rightarrow.png" height="25px" width="25px" onclick="rightchangecamera();" style="margin-left:20px;"></td>
+	</tr>
+	
+	</table>
+</div>
+
+
+
+<br><br><br><hr><hr style="margin-top:-15px;"><br>
+<div class="social-net" style="width:100px;">
+	<a href="https://www.facebook.com/shreyansh.dwivedi.18" target="_blank"><img src="fb.png" style="cursor:pointer;"></a>
+	<a href="https://twitter.com/@shreyanshdwiv97" target="_blank"><img src="twitter.png" style="cursor:pointer;"></a>
+	<a href="https://www.instagram.com/dwivedi_shreyansh1997/" target="_blank"><img src="insta.png" style="cursor:pointer;"></a>
+</div>
+
+<span id="info" style="cursor:pointer;"><a href="#">info@mysite.com</a></span>
+</body>
+
+</html>

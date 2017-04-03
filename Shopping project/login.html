@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://fonts/googleapis.com/css?family=Open+Sans:400,600,700,800,300">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="8/js-image-slider.css">
+	<link rel="stylesheet" type="text/css" href="8/tooltip.css">
+	</head>
+
+<body style="background-color:white;overflow:hidden;">
+<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="https://use.fontawesome.com/2f80cf90ad.js"></script>
+<script src="index.js"/></script>
+<script src="manual_carousel.js"></script>
+<script src="8/js-image-slider.js"/></script>
+<script src="8/tooltip.js"/></script>
+
+<div class="nav-header" style="background-color:#d9d9d9;height:80px;margin-top:0px;">
+<ul style="list-style:none;">
+	<li class="nav-header-li">
+		<a href="index.html">
+			<img src="logo.png" style="width:150px;height:45px;">
+		</a>
+	</li>
+	<li class="nav-header-li">
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+		<a href="#">
+			<input type="button" class="nav-btn" id="nav-btn" value="Home">
+		</a>
+	</li>
+	
+	<li class="nav-header-li">
+		<a href="#">
+			<input type="button" class="nav-btn" id="nav-btn" value="Collections">
+		</a>
+				<div class="collection">
+					<ul>
+						<li class="menu-main-1">
+							<ul class="menu-hidden" style="padding:0px;font-family:Comic Sans MS;">
+								<li class="menu-main" style="background-color:#f2f2f2;color:black;"><h4>ELECTRONICS</h4>
+								<ul class="menu-sub">
+									<li>Televisions</li>
+									<li>Washing Machines</li>
+									<li>AC</li>
+									<li>Refrigerators</li>
+								</ul>
+								</li>
+								<li class="menu-main" style="background-color:#ffffff;color:black;"><h4>APPLIANCES</h4>
+								<ul class="menu-sub">
+									<li>Gas Stoves</li>
+									<li>Purifier</li>
+									<li>Smart Locks</li>
+									<li>Tools</li>
+								</ul>
+								</li>
+								<li class="menu-main" style="background-color:#f2f2f2;color:black;"><h4>CLOTHING</h4>
+								<ul class="menu-sub">
+									<li>Ethnic Wear</li>
+									<li>Sports Wear</li>
+									<li>Winter Wear</li>
+									<li>Western Wear</li>
+								</ul>
+								</li>
+								<li class="menu-main" style="background-color:#ffffff;color:black;"><h4>FURNITURE</h4>
+								<ul class="menu-sub">
+									<li>Wardrobe</li>
+									<li>Sofa</li>
+									<li>Bed</li>
+									<li>Wall Shelves</li>
+								</ul>
+								</li>
+								<li class="menu-main" style="background-color:#f2f2f2;color:black;margin-right:0px;"><h4>BOOKS</h4>
+								<ul class="menu-sub">
+									<li>Entrance Exams</li>
+									<li>Novels</li>
+									<li>Fiction</li>
+									<li>Academic</li>
+								</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+	</li>
+	
+	<li class="nav-header-li">
+		<a href="#">
+			<input type="button" class="nav-btn" id="nav-btn" value="Locations" >
+		</a>
+	</li>
+	<li class="nav-header-li">
+		<a href="#">
+			<input type="button" class="nav-btn" id="nav-btn" value="About" >
+		</a>
+	</li>
+		<li class="nav-header-li">
+		<a href="contact.html" target="_blank">
+			<input type="button" class="nav-btn" id="nav-btn" value="Contact" >
+		</a>
+	</li>
+	<li class="nav-header-li">
+		<a href="login.html" target="_blank">
+			<input type="button" id="login" value="Login">
+		</a>
+	</li>
+	<li class="nav-header-li">
+		<a href="signup.html" target="_blank">
+			<input type="button" id="signup" value="Sign Up" >
+		</a>
+	</li>
+	<li class="nav-header-li">
+		<a href="#">
+				<img src="cart.png" class="toggle_menu" id="cart-image"/>	
+		</a>
+	</li>
+</ul>
+</div>
+
+
+<hr style="margin-top:-30.5px;">
+
+
+<span id="login-beg">
+<h1>Log In</h1>
+<h3>New to Bron? <a href="signup.html" id="signup-link">Sign Up</a></h3>
+</span>
+<br><br>
+<div style="border-left:1px solid #000;height:300px;margin-left:700px;width:10px;;"></div>
+
+<div class="login-form" style="width:100px;margin-top:-200px;">
+<form>
+<input type="text" placeholder="Name" style="width:300px;height:45px;margin-top:10px;border-radius:10px;"><br>
+<input type="email" placeholder="Email" style="width:300px;height:45px;margin-top:10px;border-radius:10px;"><br><br>
+<input type="submit" value="Log In" id="login-submit">
+</form>
+</div>
+<div class="login-with">
+	<a href="https://www.facebook.com/login/"><img src="continue_fb.png" style="cursor:pointer;"/></a>
+	<a href="https://accounts.google.com/Login"><img src="continue_gmail.png" style="cursor:pointer;margin-top:10px;"/></a>
+</div>
+<div style="border-left:1px solid #000;height:500px;margin-right:-1000px;width:10px;;"></div>
+
+<br>
+<hr style="margin-top:-420px;">
+<hr style="margin-top:-15px;">
+<br>
+<div class="login-social-net" style="width:100px;">
+	<a href="https://www.facebook.com/shreyansh.dwivedi.18" target="_blank"><img src="fb.png" style="cursor:pointer;"></a>
+	<a href="https://twitter.com/@shreyanshdwiv97" target="_blank"><img src="twitter.png" style="cursor:pointer;"></a>
+	<a href="https://www.instagram.com/dwivedi_shreyansh1997/" target="_blank"><img src="insta.png" style="cursor:pointer;"></a>
+</div>
+<span style="cursor:pointer;margin-left:47.5%;"><a href="#">info@mysite.com</a></span>
+
+</body>
+</html>
